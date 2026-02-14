@@ -1,13 +1,14 @@
 .encabezadoDiv {
-    background-color: rgb(48, 45, 207);
+    background-image: url("./assets/fondo.jpg");
+    background-size: cover;
     width: 1450px;                 
     max-width: 1500px;          
-    margin: 0 auto;              
+    margin:0% auto;              
     margin-bottom: 10px;
     padding: 10px 20px;
-    display: flex;               
-    justify-content: space-between;
-    align-items: center;
+    display:flex;               
+    justify-content:space-around;
+    align-items:center;
     border-radius: 8px;
 }
 

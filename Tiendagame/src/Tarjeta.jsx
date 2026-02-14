@@ -4,7 +4,8 @@ import coches from './assets/nd.jpg';
 import Acercade from './Acercade';
 import Productos from './Productos';
 import Contacto from './Contacto';  
-import Sucursales from './Sucursales'
+import Tienda from './Tienda'
+import Juegos from './Juegos';
 import "./Tarjeta.css";
 import PropTypes from 'prop-types';
 
@@ -14,7 +15,8 @@ function ContenedorTargetas({ vista }) {
     AcercaDe: <Acercade />,
     Productos: <Productos />,
     Contacto: <Contacto />,
-    Sucursales: <Sucursales />
+    Tienda: <Tienda />,
+    Juegos: <Juegos />
   };
 
   return (
@@ -41,7 +43,7 @@ ContenedorTargetas.propTypes = {
 function Tarjeta({ vista }) {
   return (
     <div className="tacs">
-      {vista !== "AcercaDe" && vista !== "Productos" && vista !== "Contacto" && vista !== "Sucursales" && (
+      {vista !== "AcercaDe" && vista !== "Productos" && vista !== "Contacto" && vista !== "Tienda" && vista !== "Juegos" && (
         <>
           <Doc name="carroseria" descripcion="Un buen coche" />
           <Dic name="fabuloso" descripcion="El más rápido de su tiempo" />

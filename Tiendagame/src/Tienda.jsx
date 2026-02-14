@@ -1,7 +1,7 @@
-import "./Sucursales.css";
+import "./Tienda.css";
 import Mapa from "./Mapa";
 
-function Sucursales() {
+function Tienda() {
   const sedes = [
     { id: 1, name: "Alameda Auyante", descripcion: "Calle Mina", lat: 20.276324, lng: -97.957975 },
     { id: 2, name: "Parque Placentero", descripcion: "Calle Alvarado", lat: 20.276471, lng: -97.957765 },
@@ -30,4 +30,4 @@ function Tarjeta({ name, descripcion, lat, lng }) {
   );
 }
 
-export default Sucursales;
+export default Tienda;

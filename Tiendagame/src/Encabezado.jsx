@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import miimagen from "./assets/images.jpg";
+import Logo from "./assets/logo.jpg";
 import iconoFacebook from './assets/imagen6.jpg';
 import iconowatsap from './assets/imagen7.jpg';
 import iconoyoutube from './assets/imagen5.jpg';
@@ -21,7 +21,7 @@ function Encabezado({ cambiarvista }) {
 function Logotipo() {
   return (
     <div className="logodiv">
-      <img src={miimagen} alt="logo" />
+      <img src={Logo} alt="logo" />
     </div>
   );
 }
@@ -34,7 +34,8 @@ function Menu({ cambiarvista }) {
         <li onClick={() => cambiarvista("AcercaDe")}>Acerca de</li>
         <li onClick={() => cambiarvista("Productos")}>Productos</li>
         <li onClick={() => cambiarvista("Contacto")}>Contacto</li>
-        <li onClick={() => cambiarvista("Sucursales")}>Sucursales</li>
+        <li onClick={() => cambiarvista("Tienda")}>Tiendas</li>
+        <li onClick={() => cambiarvista("Juegos")}> Mas_juegos</li>
       </ul>
     </div>
   );

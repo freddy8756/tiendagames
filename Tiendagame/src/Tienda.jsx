@@ -9,19 +9,17 @@ function Tienda() {
   ];
 
   return (
-    <div className="sucursaless">
-      <div className="classSedes">
+    <div className="Tienda">
         {sedes.map((sede) => (
           <Tarjeta key={sede.id} {...sede} />
         ))}
-      </div>
     </div>
   );
 }
 
 function Tarjeta({ name, descripcion, lat, lng }) {
   return (
-    <div className="sucursal">
+    <div className="Tienda-card">
       <h3>{name}</h3>
       <p>{descripcion}</p>
       <p> {lat}, {lng}</p>

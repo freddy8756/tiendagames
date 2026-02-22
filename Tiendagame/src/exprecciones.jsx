@@ -1,6 +1,5 @@
 import "./Exprecciones.css";
 import Mapaubica from "./mapaubica";
-import Mapa from "./Mapa";
 function Expresiones(props) {
   const nombre = "Darck";
   const apellidos = "patner";

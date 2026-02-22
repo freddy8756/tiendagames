@@ -1,6 +1,6 @@
-import coche from './assets/coche.jpg';
-import cochea from './assets/descarga.jpg';
-import coches from './assets/nd.jpg';
+import mario from './assets/mario.jpg';
+import Ralp from './assets/Ralp.jpg';
+import pacman from './assets/pacman.png';
 import Acercade from './Acercade';
 import Productos from './Productos';
 import Contacto from './Contacto';  
@@ -41,55 +41,28 @@ ContenedorTargetas.propTypes = {
 };
 
 function Tarjeta({ vista }) {
+  const zona =[
+    { id: 1, name: "Mario", descripcion: "Juego inolvidable", src: mario },
+    { id: 2, name: "Ralp el demoledor", descripcion: "Especialista en reparar", src: Ralp },
+    { id: 3, name: "Pacman", descripcion: "come fantasmas", src: pacman }
+  ]
   return (
-    <div className="tacs">
+    <div className="inicio">
       {vista !== "AcercaDe" && vista !== "Productos" && vista !== "Contacto" && vista !== "Tienda" && vista !== "Juegos" && (
         <>
-          <Doc name="carroseria" descripcion="Un buen coche" />
-          <Dic name="fabuloso" descripcion="El más rápido de su tiempo" />
-          <Dooc name="auto clásico" descripcion="Viejo coche" saludarfun={Saludar} />
+          {zona.map((item) => (
+            <div key={item.id} className="inicio-card">
+              <h3>{item.name}</h3>
+              <p>{item.descripcion}</p>
+              <img src={item.src} alt={item.name} />
+            </div>
+          ))}
         </>
       )}
       
       <ContenedorTargetas vista={vista} />
     </div>
   );
-}
-
-
-function Doc(props) {
-  return (
-    <div className="doc">
-      <img src={coche} alt="coche" />
-      <h2>{props.name}</h2>
-      <p>{props.descripcion}</p>
-    </div>
-  );
-}
-
-function Dic(props) {
-  return (
-    <div className="dic">
-      <img src={cochea} alt="coche" />
-      <h2>{props.name}</h2>
-      <p>{props.descripcion}</p>
-    </div>
-  );
-}
-
-function Dooc(props) {
-  return (
-    <div className="dooc">
-      <img src={coches} alt="coche" />
-      <h2>{props.name}</h2>
-      <p>{props.descripcion}</p>
-      <p>{props.saludarfun()}</p>
-    </div>
-  );
-}
-
-function Saludar() {
-  
 }
 
 export default Tarjeta;

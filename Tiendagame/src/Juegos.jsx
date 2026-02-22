@@ -10,19 +10,18 @@ function Juegos() {
   ];
 
   return (
-    <div className="sucursaless">
-      <div className="classSedes">
+    <div className="Juegos">
         {sedes.map((sede) => (
           <Tarjeta key={sede.id} src={sede.src} name={sede.name} descripcion={sede.descripcion} />
         ))}
       </div>
-    </div>
+    
   );
 }
 
 function Tarjeta({ src, name, descripcion }) {
   return (
-    <div className="sucursal">
+    <div className="Juegos-card">
       <h3>{name}</h3>
       <p>{descripcion}</p>
       <img src={src} alt={name} />

@@ -6,6 +6,7 @@ import iconoyoutube from './assets/imagen5.jpg';
 import iconoinstagram from './assets/imagen8.jpg';
 import iconotiktok from './assets/tiktok.jpg';
 import iconotich from './assets/tich.jpg';
+import Clima from './Clima.jsx';
 import './Encabezado.css';
 
 function Encabezado({ cambiarvista }) {
@@ -14,6 +15,7 @@ function Encabezado({ cambiarvista }) {
       <Logotipo />
       <Menu cambiarvista={cambiarvista} />
       <Redes />
+      <Clima />
     </div>
   );
 }

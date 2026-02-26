@@ -1,17 +1,18 @@
 import { useState } from "react";
 import Encabezado from "./Encabezado";
-import Expresiones from "./Exprecciones";
 import Tarjeta from "./Tarjeta";
 import Tarjet from "./Tarjet";
+import Acercade from "./Acercade";
+import './App.css';
 
 function App() {
   const [vista, setVista] = useState("Inicio");
 
   return (
-    <div>
+    <div className="ini">
       <Encabezado cambiarvista={setVista} /> 
       <Tarjeta vista={vista}/>
-      <Expresiones name="freddy"/>
+      <Acercade/>
       <Tarjet/>
     </div>
   );

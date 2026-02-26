@@ -3,9 +3,9 @@ import Mapa from "./Mapa";
 
 function Tienda() {
   const sedes = [
-    { id: 1, name: "Alameda Auyante", descripcion: "Calle Mina", lat: 20.276324, lng: -97.957975 },
-    { id: 2, name: "Parque Placentero", descripcion: "Calle Alvarado", lat: 20.276471, lng: -97.957765 },
-    { id: 3, name: "Señorio de la Sal", descripcion: "Calle Florida", lat: 20.275731, lng: -97.957807 }
+    { id: 1, name: "Arcade", descripcion: "21 de marzo", lat: 20.270213, lng: -97.954288,  },
+    { id: 2, name: "Gamebay", descripcion: "Calle Alvarado", lat: 20.274353, lng: -97.958872},
+    { id: 3, name: "Gamezone", descripcion: "Calle Florida", lat: 20.275731, lng: -97.957807 }
   ];
 
   return (

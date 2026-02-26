@@ -10,7 +10,10 @@ function TarjetComponen() {
   return (
     <div className="acercade">
       <h3>Acerca de</h3>
-      <p>Lo que veras aqui son cosas como vehiculos antiguos que te pueden interesar para coleccionar o restaurar, esperamos te guste lo que veras aqui, hay muchas cosas que podras ver en algun momento asi que esperamos que te encuentres lo que estas buscando.</p>
+      <p>Esta es una tienda virtual dedicada a los juegos clásicos de arcade. 
+        Ofrecemos una selección única de juegos retro que han marcado la historia del videojuego, gran parte de los juegos
+         llegaron a ser la infancia de muchos de ustedes, algunos nos sacarn risas u otros fueron para andar con el grupito de amigos, 
+         esperamos que les sea de su agrado.</p>
     </div>
   );
 }

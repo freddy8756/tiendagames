@@ -1,7 +1,6 @@
 import mario from './assets/mario.jpg';
 import Ralp from './assets/Ralp.jpg';
 import pacman from './assets/pacman.png';
-import Acercade from './Acercade';
 import Productos from './Productos';
 import Contacto from './Contacto';  
 import Tienda from './Tienda'
@@ -12,7 +11,6 @@ import PropTypes from 'prop-types';
 function ContenedorTargetas({ vista }) {
   const vistas = {
     Inicio: <Inicio />,
-    AcercaDe: <Acercade />,
     Productos: <Productos />,
     Contacto: <Contacto />,
     Tienda: <Tienda />,
@@ -48,7 +46,7 @@ function Tarjeta({ vista }) {
   ]
   return (
     <div className="inicio">
-      {vista !== "AcercaDe" && vista !== "Productos" && vista !== "Contacto" && vista !== "Tienda" && vista !== "Juegos" && (
+      { vista !== "Productos" && vista !== "Contacto" && vista !== "Tienda" && vista !== "Juegos" && (
         <>
           {zona.map((item) => (
             <div key={item.id} className="inicio-card">

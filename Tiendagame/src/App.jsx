@@ -3,6 +3,7 @@ import Encabezado from "./Encabezado";
 import Tarjeta from "./Tarjeta";
 import Tarjet from "./Tarjet";
 import Acercade from "./Acercade";
+import Dueño from "./Dueño";
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Encabezado cambiarvista={setVista} /> 
       <Tarjeta vista={vista}/>
       <Acercade/>
+      <Dueño/>
       <Tarjet/>
     </div>
   );

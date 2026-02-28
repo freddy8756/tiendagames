@@ -1,20 +1,17 @@
 import PropTypes from "prop-types";
 import Logo from "./assets/logo.jpg";
-import iconoFacebook from './assets/imagen6.jpg';
-import iconowatsap from './assets/imagen7.jpg';
-import iconoyoutube from './assets/imagen5.jpg';
-import iconoinstagram from './assets/imagen8.jpg';
-import iconotiktok from './assets/tiktok.jpg';
-import iconotich from './assets/tich.jpg';
 import Clima from './Clima.jsx';
 import './Encabezado.css';
-
+import youtube from './assets/imagen5.jpg';
+import facebook from './assets/imagen6.jpg';
+import watsapp from './assets/imagen7.jpg';
+import ticktok from './assets/tiktok.jpg';
+import instagram from './assets/Imagen8.jpg'
 function Encabezado({ cambiarvista }) {
   return (
     <div className="encabezadoDiv">
       <Logotipo />
       <Menu cambiarvista={cambiarvista} />
-      <Redes />
       <Clima />
     </div>
   );
@@ -24,38 +21,35 @@ function Logotipo() {
   return (
     <div className="logodiv">
       <img src={Logo} alt="logo" />
+      <h1 className="tienda">Bienvenido a la Tienda de juegos</h1>
+      <div className="redesdiv">
+        <ul>
+          <li><img src={ticktok} alt="tiktok" /></li>
+          <li><img src={youtube} alt="youtube" /></li>
+          <li><img src={facebook} alt="facebook" /></li>
+          <li><img src={watsapp} alt="watsapp" /></li>
+          <li><img src={instagram} alt="instagram" /></li>
+        </ul>
+      </div>
     </div>
   );
 }
+
 
 function Menu({ cambiarvista }) {
   return (
     <div className="menudiv">
       <ul>
-        <li onClick={() => cambiarvista("Inicio")}>Inicio</li>
-        <li onClick={() => cambiarvista("Productos")}>Productos</li>
-        <li onClick={() => cambiarvista("Contacto")}>Contacto</li>
-        <li onClick={() => cambiarvista("Tienda")}>Tiendas</li>
-        <li onClick={() => cambiarvista("Juegos")}> Mas_juegos</li>
+        <li><a onClick={() => cambiarvista("Inicio")}>Inicio</a></li>
+        <li><a onClick={() => cambiarvista("Productos")}>Productos</a></li>
+        <li><a onClick={() => cambiarvista("Contacto")}>Contacto</a></li>
+        <li><a onClick={() => cambiarvista("Tienda")}>Tiendas</a></li>
+        <li><a onClick={() => cambiarvista("Juegos")}>Más juegos</a></li>
       </ul>
     </div>
   );
 }
 
-function Redes() {
-  return (
-    <div className="redesdiv">
-      <ul>
-        <li><img src={iconoFacebook} alt="Facebook" /></li>
-        <li><img src={iconowatsap} alt="WhatsApp" /></li>
-        <li><img src={iconoyoutube} alt="YouTube" /></li>
-        <li><img src={iconoinstagram} alt="Instagram" /></li>
-        <li><img src={iconotiktok} alt="TikTok" /></li>
-        <li><img src={iconotich} alt="Twitch" /></li>
-      </ul>
-    </div>
-  );
-}
 
 Menu.propTypes = {
   cambiarvista: PropTypes.func.isRequired,

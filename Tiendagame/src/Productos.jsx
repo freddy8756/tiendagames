@@ -4,6 +4,9 @@ import Botones from "./assets/Botones.jpg";
 import Pantalla from "./assets/Pantalla.jpg";
 import Base from "./assets/Base.jpg";
 import Pistabaile from "./assets/Pistabaile.jpg";
+import monedero from "./assets/monedero.jpg";
+import placabase from "./assets/placabase.jpg";
+import fuentealimentacion from "./assets/fuentealimen.jpg";
 function Productos() {
   const sedes = [
     { id: 1, name: "Palanca", descripcion: "Para movimientos de game",src:Palanca},
@@ -11,9 +14,9 @@ function Productos() {
     { id: 3, name: "Pantalla", descripcion: "Zona para mostrar juegos",src:Pantalla},
     { id: 4, name: "base para componentes", descripcion: "Acabar con un mono",src:Base },
     { id: 5, name: "Pista de baile", descripcion: "Zona para bailar",src:Pistabaile},
-    { id: 6, name: "Street Fighter", descripcion: "Luchar contra otros personajes" },
-    { id: 7, name: "Frooger", descripcion: "Ayuda a un sapo a cruzar la calle y el río" },
-    { id: 8, name: "Dig Dug", descripcion: "Cavar túneles y derrotar a los enemigos" },
+    { id: 6, name: "Monedero", descripcion: "Perfecto para echar monedas",src:monedero},
+    { id: 7, name: "Placa base", descripcion: "Componente principal de una maquina de arcade",src:placabase },
+    { id: 8, name: "Fuente de alimentación", descripcion: "Suministra energía a los componentes",src:fuentealimentacion },
   ];
 
   return (

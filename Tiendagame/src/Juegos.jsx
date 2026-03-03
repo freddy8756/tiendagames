@@ -35,6 +35,7 @@ function Tarjeta({ src, name, descripcion }) {
       <h3>{name}</h3>
       <p>{descripcion}</p>
       <img src={src} alt={name} />
+      <button className="compr">Comprar</button>
     </div>
   );
 }

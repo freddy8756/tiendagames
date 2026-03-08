@@ -5,6 +5,7 @@ import Productos from './Productos';
 import Contacto from './Contacto';  
 import Tienda from './Tienda'
 import Juegos from './Juegos';
+import Usuarios from './Usuarios';
 import "./Tarjeta.css";
 import PropTypes from 'prop-types';
 
@@ -13,6 +14,7 @@ function ContenedorTargetas({ vista }) {
     Inicio: <Inicio />,
     Productos: <Productos />,
     Contacto: <Contacto />,
+    Usuarios: <Usuarios />,
     Tienda: <Tienda />,
     Juegos: <Juegos />
   };
@@ -46,7 +48,7 @@ function Tarjeta({ vista }) {
   ]
   return (
     <div className="inicio">
-      { vista !== "Productos" && vista !== "Contacto" && vista !== "Tienda" && vista !== "Juegos" && (
+      { vista !== "Productos" && vista !== "Contacto" && vista !== "Tienda" && vista !== "Juegos" && vista !== "Usuarios" && (
         <>
           {zona.map((item) => (
             <div key={item.id} className="inicio-card">

@@ -7,6 +7,7 @@ import facebook from './assets/imagen6.jpg';
 import watsapp from './assets/imagen7.jpg';
 import ticktok from './assets/tiktok.jpg';
 import instagram from './assets/Imagen8.jpg'
+import { useAuth } from "./Authcontex";
 function Encabezado({ cambiarvista }) {
   return (
     <div className="encabezadoDiv">
@@ -37,15 +38,29 @@ function Logotipo() {
 
 
 function Menu({ cambiarvista }) {
+  const { isLoggedIn, logout } = useAuth();
+  const handleLogout = () => {
+    logout();
+    cambiarvista("Inicio"); // redirige a Inicio después de cerrar sesión
+  };
   return (
     <div className="menudiv">
       <ul>
-        <li><a onClick={() => cambiarvista("Inicio")}>Inicio</a></li>
         <li><a onClick={() => cambiarvista("Productos")}>Productos</a></li>
         <li><a onClick={() => cambiarvista("Contacto")}>Contacto</a></li>
-        <li><a onClick={() => cambiarvista("Usuarios")}>Usuarios</a></li>
         <li><a onClick={() => cambiarvista("Tienda")}>Tiendas</a></li>
         <li><a onClick={() => cambiarvista("Juegos")}>Más juegos</a></li>
+        <li><a onClick={() => cambiarvista("Iniciosesion")}>Inicio sesion</a></li>
+        {isLoggedIn? (
+          <>
+           <li><a onClick={() => cambiarvista("Usuarios")}>Usuarios</a></li>
+           <li><a onClick={handleLogout}>Cerrar sesion</a></li>
+          </>
+        ):(
+          <>
+            <li><a onClick={() => cambiarvista("Inicio")}>Login</a></li>
+          </>
+        )}
       </ul>
     </div>
   );

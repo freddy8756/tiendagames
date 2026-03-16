@@ -5,14 +5,17 @@ import Tarjet from "./Tarjet";
 import Acercade from "./Acercade";
 import Dueño from "./Dueño";
 import './App.css';
+import { AuthProvider } from "./Authcontex";
 
 function App() {
   const [vista, setVista] = useState("Inicio");
 
   return (
     <div className="ini">
-      <Encabezado cambiarvista={setVista} /> 
+      <AuthProvider>
+        <Encabezado cambiarvista={setVista} /> 
       <Tarjeta vista={vista}/>
+      </AuthProvider>
       <Acercade/>
       <Dueño/>
       <Tarjet/>

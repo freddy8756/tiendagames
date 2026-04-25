@@ -13,13 +13,21 @@
 
 .usuarios-table th,
 .usuarios-table td {
+<<<<<<< HEAD
   border: 1px solid #000000;
+=======
+  border: 1px solid #9c3b3b;
+>>>>>>> aaddeb34ed897cb39bada441f6b5a308a4b81994
   padding: 12px;
   text-align: center;
 }
 
 .usuarios-table th {
+<<<<<<< HEAD
   background-color: #081d96;
+=======
+  background-color: #1c9bc2;
+>>>>>>> aaddeb34ed897cb39bada441f6b5a308a4b81994
   color: #fff;
 }
 
@@ -36,11 +44,19 @@
 }
 
 .btn.editar {
+<<<<<<< HEAD
   background-color: #0f7e13;
+=======
+  background-color: #4caf50;
+>>>>>>> aaddeb34ed897cb39bada441f6b5a308a4b81994
   color: white;
 }
 
 .btn.eliminar {
+<<<<<<< HEAD
   background-color: #931c1c;
+=======
+  background-color: #f44336;
+>>>>>>> aaddeb34ed897cb39bada441f6b5a308a4b81994
   color: white;
 }

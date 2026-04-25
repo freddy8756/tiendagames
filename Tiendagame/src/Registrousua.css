@@ -1,6 +1,11 @@
 .pagina{
+<<<<<<< HEAD
     color: white;
   background-color: rgb(8, 50, 128);
+=======
+    color: rgb(0, 0, 0);
+  background-image: url("./assets/fondo.jpg") ;
+>>>>>>> aaddeb34ed897cb39bada441f6b5a308a4b81994
   width: 275px;
   height: 250px;           
   text-align: center;
@@ -8,5 +13,8 @@
   border-radius: 8px;       
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   margin: 10px;
+<<<<<<< HEAD
   margin-left: 150px;
+=======
+>>>>>>> aaddeb34ed897cb39bada441f6b5a308a4b81994
 }
